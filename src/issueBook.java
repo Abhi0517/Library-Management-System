@@ -132,7 +132,6 @@ public class issueBook extends javax.swing.JFrame {
             Date duDt = (Date)jDateChooser2.getDate();
             String issueDate = dForm.format(isDt);
             String dueDate = dForm.format(duDt);
-            String reDate = "N/A";
             Connection connect = ConnectionProvider.getConnect();
             Statement st = connect.createStatement();
             ResultSet rs;
@@ -144,13 +143,13 @@ public class issueBook extends javax.swing.JFrame {
                 if(rs1.next())
                 {
                     ResultSet rs2;
-                    rs2 = st.executeQuery("Select Count(*) as count from Borrowing_History where student_ID = '"+studentId+"'");
+                    rs2 = st.executeQuery("Select Count(*) as count from IssueBookRecord where student_ID = '"+studentId+"'");
                     if(rs2.next())
                     {
                         int freq = rs2.getInt("count");
-                        if(freq<=3)
+                        if(freq<=2)
                         {
-                            st.executeUpdate("Insert into Borrowing_History values('"+bookId+"','"+studentId+"','"+issueDate+"','"+dueDate+"','"+reDate+"')");
+                            st.executeUpdate("Insert into IssueBookRecord values('"+bookId+"','"+studentId+"','"+issueDate+"','"+dueDate+"')");
                             JOptionPane.showMessageDialog(null,"Book successfully issued!");
                             setVisible(false);
                             new issueBook().setVisible(true);

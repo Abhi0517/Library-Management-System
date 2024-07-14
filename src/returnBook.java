@@ -154,14 +154,17 @@ public class returnBook extends javax.swing.JFrame {
         {
             SimpleDateFormat dForm = new SimpleDateFormat("yyyy-MM-dd");
             String bookId = jTextField1.getText();
+            String studentId = jTextField2.getText();
             String issueDate = jTextField3.getText();
+            String dueDate = jTextField4.getText();
             Date reDt = (Date)jDateChooser1.getDate();
             String returnDate = dForm.format(reDt);
             if(!jTextField1.getText().isEmpty() && !jTextField3.getText().isEmpty() )
             {
                 Connection connect = ConnectionProvider.getConnect();
                 Statement st = connect.createStatement();
-                st.executeUpdate("UPDATE Borrowing_History SET RETURN_DATE ='"+returnDate+"' WHERE BOOK_ID = '"+bookId+"'");
+                st.executeUpdate("Insert into Borrowing_History values('"+bookId+"','"+studentId+"','"+issueDate+"','"+dueDate+"','"+returnDate+"')");
+                st.executeUpdate("Delete from IssueBookRecord where book_id ='"+bookId+"' and student_id = '"+studentId+"'");
                 ResultSet rs;
                 rs= st.executeQuery("SELECT DATEDIFF('"+returnDate+"','"+issueDate+"') as days from Borrowing_History");
                 if(rs.next())
@@ -226,7 +229,7 @@ public class returnBook extends javax.swing.JFrame {
             Connection connect = ConnectionProvider.getConnect();
             Statement st = connect.createStatement();
             ResultSet rs; 
-            rs = st.executeQuery("Select * from Borrowing_History where book_ID = '"+bookID+"' and student_ID = '"+studentID+"'");
+            rs = st.executeQuery("Select * from IssueBookRecord where book_ID = '"+bookID+"' and student_ID = '"+studentID+"'");
             if (rs.next())
             {
                 String issueDate = rs.getString("ISSUE_DATE");

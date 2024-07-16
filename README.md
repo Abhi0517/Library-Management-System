@@ -45,3 +45,18 @@ This project implements a College Library Management System designed to streamli
 **WorkFlow and Execution:**
 
 1. **Copying URL of the repository:**
+
+![1](https://github.com/user-attachments/assets/9d7c2d3f-9bb9-44bb-a253-a4550b8f5c31)
+
+2. **Cloning the repository in NetBeans IDE:**
+
+![3](https://github.com/user-attachments/assets/246b3f01-cbbc-4331-aa4d-823b07bbd8f0)
+
+3. **Executing the project in NetBeans IDE:**
+
+![2](https://github.com/user-attachments/assets/5dcd3b7c-4f12-46a0-b00e-22c20fbd9337)
+
+4. **Executing the project in NetBeans IDE:**
+
+
+

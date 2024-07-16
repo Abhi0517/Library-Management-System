@@ -21,6 +21,10 @@ This project implements a College Library Management System designed to streamli
 * **Back-end:** Java Database Connectivity (JDBC)
 * **Database:** Designed to work with MySQL
 
+**Test Environment:**
+* **Operating System:** Windows
+* **Java Version:** java 22.0.1 2024-04-16
+
 **Getting Started:**
 
 1. **Get Repository URL**:

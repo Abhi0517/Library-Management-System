@@ -26,7 +26,7 @@ This project implements a College Library Management System designed to streamli
 1. **Get Repository URL**:
    Copy the URL to **Library-Management-System** repository.
 2. **Open NetBeans**:
-   Choose **Team > Git > Clone** from the main menu. This opens the Clone Repository wizard.
+   Choose **Team > Git > Clone** or **Team > Remote > Clone** from the main menu. This opens the Clone Repository wizard.
 3. **Enter Repository URL**:
    Paste the repository URL into the appropriate field and click **Next**.
 4. **Select Branch**:
@@ -41,3 +41,7 @@ This project implements a College Library Management System designed to streamli
    Typically, the default remote name "origin" is recommended for the original repository being cloned.
 9. **Finish**:
    Click **Finish** to clone this repository into the specified directory.
+
+**WorkFlow and Execution:**
+
+1. **Copying URL of the repository:**

@@ -2,7 +2,7 @@
 
 This project implements a College Library Management System designed to streamline library operations for librarians and students.
 
-* **Features:**
+**Features:**
 
 * **User Management:**
     * Separate login for librarians and students with role-based access control.
@@ -15,13 +15,13 @@ This project implements a College Library Management System designed to streamli
     * Browse and search the library catalog for books.
     * Borrow books (atmost three per student).
 
-* **Tech Stack:**
+**Tech Stack:**
 
 * **Front-end:** Java Swing
 * **Back-end:** Java Database Connectivity (JDBC)
 * **Database:** Designed to work with MySQL
 
-* **Getting Started:**
+**Getting Started:**
 
 1. **Get Repository URL**:
    Copy the URL to **Library-Management-System** repository.
@@ -42,7 +42,7 @@ This project implements a College Library Management System designed to streamli
 9. **Finish**:
    Click **Finish** to clone this repository into the specified directory.
 
-* **WorkFlow and Execution:**
+**WorkFlow and Execution:**
 
 1. **Copying URL of the repository:**
 
@@ -65,6 +65,7 @@ This project implements a College Library Management System designed to streamli
 ![2](https://github.com/user-attachments/assets/ba118309-04d2-4ae3-b72f-a439825d14c1)
 
 6. **DataBase Used : Library.**
+
 ![Untitled design](https://github.com/user-attachments/assets/ed62f1f0-3b25-472f-bde5-093a7a0d3301)
 
 7. **Once logged in, a Librarian can efficiently access Librarian Dashboard with all of its features.**
@@ -74,7 +75,8 @@ This project implements a College Library Management System designed to streamli
 
 ![4](https://github.com/user-attachments/assets/a8a170a9-5e63-4000-a538-0e5d86fa23ea)
 
-9. * Student and Librarian data is stored in *Student* and *Librarian* tables respectively.
+9. **Points to remember**
+   * Student and Librarian data is stored in *Student* and *Librarian* tables respectively.
    * Books when searched, added, edited or deleted, are done from *Books* table in the *Library Database*.
    * A book when issued, its entry is logged in *issuebookrecord* table.
    * When the specified book is returned, its record is removed from *issuebookrecord* and finnaly logged in *borrowing_history* table.

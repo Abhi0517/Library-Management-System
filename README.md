@@ -2,7 +2,7 @@
 
 This project implements a College Library Management System designed to streamline library operations for librarians and students.
 
-**Features:**
+* **Features:**
 
 * **User Management:**
     * Separate login for librarians and students with role-based access control.
@@ -15,13 +15,13 @@ This project implements a College Library Management System designed to streamli
     * Browse and search the library catalog for books.
     * Borrow books (atmost three per student).
 
-**Tech Stack:**
+* **Tech Stack:**
 
 * **Front-end:** Java Swing
 * **Back-end:** Java Database Connectivity (JDBC)
 * **Database:** Designed to work with MySQL
 
-**Getting Started:**
+* **Getting Started:**
 
 1. **Get Repository URL**:
    Copy the URL to **Library-Management-System** repository.
@@ -42,7 +42,7 @@ This project implements a College Library Management System designed to streamli
 9. **Finish**:
    Click **Finish** to clone this repository into the specified directory.
 
-**WorkFlow and Execution:**
+* **WorkFlow and Execution:**
 
 1. **Copying URL of the repository:**
 
@@ -56,7 +56,28 @@ This project implements a College Library Management System designed to streamli
 
 ![2](https://github.com/user-attachments/assets/5dcd3b7c-4f12-46a0-b00e-22c20fbd9337)
 
-4. **Executing the project in NetBeans IDE:**
+4. **HomePage provides login facilities to both Student and Librarian:**
 
+![1](https://github.com/user-attachments/assets/8cb13436-24a6-4204-8015-7ffe38edd83d)
+* *Librarian Phone Number is the Librarian Login Password*
 
+5. **New Librarians and Students can register themselves easily:**
+![2](https://github.com/user-attachments/assets/ba118309-04d2-4ae3-b72f-a439825d14c1)
 
+6. **DataBase Used : Library.**
+![Untitled design](https://github.com/user-attachments/assets/ed62f1f0-3b25-472f-bde5-093a7a0d3301)
+
+7. **Once logged in, a Librarian can efficiently access Librarian Dashboard with all of its features.**
+![3](https://github.com/user-attachments/assets/3aa758c6-c3c5-4b96-9c37-688f3cc8de22)
+
+8. **Once logged in, a Student can efficiently access Student Dashboard with all of its features.**
+
+![4](https://github.com/user-attachments/assets/a8a170a9-5e63-4000-a538-0e5d86fa23ea)
+
+9. * Student and Librarian data is stored in *Student* and *Librarian* tables respectively.
+   * Books when searched, added, edited or deleted, are done from *Books* table in the *Library Database*.
+   * A book when issued, its entry is logged in *issuebookrecord* table.
+   * When the specified book is returned, its record is removed from *issuebookrecord* and finnaly logged in *borrowing_history* table.
+   * Any Librarian can issue book to any student.
+   * Atmost three books can be issue to one student.
+   * If a borrowed book is not returned within fifteen days, a fine of rs.10/day is imposed on the student.
